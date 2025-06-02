@@ -1,0 +1,92 @@
+/* Variáveis globais de cor */
+:root {
+    --roxo-profundo: #4a148c;
+    --azul-escuro: #0d47a1;
+    --gradiente-foco: linear-gradient(135deg, var(--roxo-profundo), var(--azul-escuro));
+    --branco: #ffffff;
+    --preto: #212529;
+    --cinza-claro: #f8f9fa;
+    --roxo-claro: #6f42c1;
+}
+
+/* Estilos gerais */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Logo */
+.logo-icon {
+    color: var(--roxo-claro);
+    font-size: 1.8rem;
+}
+
+.logo-text {
+    color: var(--branco);
+    font-weight: 700;
+    margin-left: 8px;
+}
+
+/* Hero Section */
+.hero-section {
+    background: var(--gradiente-foco);
+    color: var(--branco);
+    padding: 5rem 0;
+}
+
+/* Cards de funcionalidades */
+.feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--roxo-profundo);
+}
+
+/* Depoimentos */
+.testimonial-card {
+    border-left: 4px solid var(--roxo-profundo);
+}
+
+/* Planos */
+.pricing-card {
+    transition: all 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Footer */
+footer {
+    background-color: var(--preto);
+}
+
+footer a {
+    color: var(--branco);
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+footer a:hover {
+    opacity: 1;
+    text-decoration: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 3rem 0;
+        text-align: center;
+    }
+    
+    .hero-section img {
+        margin-top: 2rem;
+    }
+    
+    .logo-icon {
+        font-size: 1.5rem;
+    }
+    
+    .logo-text {
+        font-size: 1.2rem;
+    }
+}
